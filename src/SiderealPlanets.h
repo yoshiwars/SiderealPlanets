@@ -69,6 +69,8 @@ class SiderealPlanets {
 	void setDST(void);
 	void rejectDST(void);
     boolean setLatLong(double latitude, double longitude);
+	double getLatitude();
+	double getLongitude();
 	boolean setGMTdate(int year, int month, int day);
     boolean setGMTtime(int hours, int minutes, float seconds);
     boolean setLocalTime(int hours, int minutes, float seconds);

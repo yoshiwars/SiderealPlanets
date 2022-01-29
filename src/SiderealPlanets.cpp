@@ -243,6 +243,16 @@ boolean SiderealPlanets::setLatLong(double latitude, double longitude) {
   return true;
 }
 
+//Get Latitude
+double SiderealPlanets::getLatitude(){
+  return decLat;
+}
+
+//Get Longitude
+double SiderealPlanets::getLongitude(){
+  return decLong;
+}
+
 boolean SiderealPlanets::setGMTdate(int year, int month, int day) {
   if (GMTyear == year && GMTmonth == month && GMTday == day) return true; //Already did it
   if (year == 0) return false;
